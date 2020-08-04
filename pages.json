@@ -1,0 +1,149 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	    {
+            "path" : "pages/home/home",
+            "style" : {
+				"navigationBarTitleText": "首页"
+			}
+        }
+        ,{
+            "path" : "pages/order/order",
+            "style" : {
+				"navigationBarTitleText": "订单中心"
+			}
+        }
+        ,{
+            "path" : "pages/mine/mine",
+            "style" : {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh":false
+			}
+        }
+        ,{
+            "path" : "pages/hotels/hotelList/hotelList",
+            "style" : {
+				"navigationBarTitleText": "酒店"
+			}
+        }
+        ,{
+            "path" : "pages/hotels/hotelDetail/hotelDetail",
+            "style" : {
+				"navigationBarTitleText": "酒店详情"
+			}
+        }
+        ,{
+            "path" : "pages/order/prepay/prepay",
+            "style" : {
+				"navigationBarTitleText": "预付款"
+			}
+        }
+        ,{
+            "path" : "pages/order/grade/grade",
+            "style" : {
+				"navigationBarTitleText": "用户评价"
+			}
+        }
+        ,{
+            "path" : "pages/paysuccess/paysuccess",
+            "style" : {
+				"navigationBarTitleText": "支付成功",
+				"enablePullDownRefresh":false
+			}
+        }
+        ,{
+            "path" : "pages/mine/personal/personal",
+            "style" : {
+				"navigationBarTitleText": "个人资料",
+				"enablePullDownRefresh":false
+			}
+        }
+        ,{
+            "path" : "pages/mine/message/message",
+            "style" : {
+				"navigationBarTitleText": "消息中心"
+			}
+        }
+        ,{
+            "path" : "pages/mine/steward/steward",
+            "style" : {
+				"navigationBarTitleText": "呼叫管家",
+				"enablePullDownRefresh":false
+			}
+        }
+        ,{
+            "path" : "pages/mine/suggestion/suggestion",
+            "style" : {
+				"navigationBarTitleText": "用户反馈",
+				"enablePullDownRefresh":false
+			}
+        },
+		{
+		    "path" : "pages/orderpay/orderpay",
+		    "style" : {
+				"navigationBarTitleText": "订单支付",
+				"enablePullDownRefresh":false
+			}
+		}
+        ,{
+            "path" : "pages/map/map",
+            "style" : {
+				"navigationBarTitleText": "导航",
+				"enablePullDownRefresh":false
+			}
+        }
+        ,{
+            "path" : "pages/hotels/view/view",
+            "style" : {
+				"navigationBarTitleText": "3D全景",
+				"enablePullDownRefresh":false
+			}
+        }
+    ],
+	"tabBar": {
+	    "color": "#999",
+	    "selectedColor": "#169BD5",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/home/home",
+	        "iconPath": "static/home.png",
+	        "selectedIconPath": "static/home-a.png",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/order/order",
+	        "iconPath": "static/order.png",
+	        "selectedIconPath": "static/order-a.png",
+	        "text": "订单"
+	    }, {
+	        "pagePath": "pages/mine/mine",
+	        "iconPath": "./static/mine.png",
+	        "selectedIconPath": "static/mine-a.png",
+	        "text": "我的"
+	    }]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "#fff",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#000",
+		"backgroundColor": "#F8F8F8",
+		"enablePullDownRefresh":true,
+		"onReachBottomDistance": 50,
+		"backgroundColorTop":"#C0C0C0",
+		"backgroundColorBottom":"#C0C0C0"
+	},
+	"permission": {
+	    "scope.userLocation": {
+	      "desc": "好订网小程序想获得您当前的位置！" // 高速公路行驶持续后台定位
+	    }
+	 },
+	"plugins": {
+	 "QCloudAIVoice": {
+		 "version": "1.0.6",
+		 "provider": "wx3e17776051baf153"
+	 },
+	 "WechatSI": {
+		 "version": "0.3.1",
+		 "provider": "wx069ba97219f66d99"
+	 }
+	}
+}
